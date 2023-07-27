@@ -16,6 +16,10 @@ firePottery(pot, 500);
 firePottery(vase, 25000);
 firePottery(doll, 200);
 
+// The return statement is needed on the end of this function because it is
+// not only updating the array invoked in usePottery, but also updating the
+// objects on lines 7-11. This is why the test was showing failed but HTML was
+// displaying the correct information
 toSellOrNotToSell(mug);
 toSellOrNotToSell(plate);
 toSellOrNotToSell(pot);
@@ -26,8 +30,5 @@ usePottery();
 
 const parentHTMLElement = document.querySelector(".potteryList");
 parentHTMLElement.innerHTML = PotteryList();
-// Fire each piece of pottery in the kiln
 
-// Determine which ones should be sold, and their price
-
-// Invoke the component function that renders the HTML list
+//! I don't understand how arrays are getting updated in this one... and why do we need a return statement on the teSell func?//

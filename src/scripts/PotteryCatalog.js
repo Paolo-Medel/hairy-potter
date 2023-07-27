@@ -12,7 +12,5 @@ export const toSellOrNotToSell = (object) => {
 };
 
 export const usePottery = () => {
-  const potteryArray = pricedPottery;
-
-  return potteryArray;
+  return pricedPottery;
 };
