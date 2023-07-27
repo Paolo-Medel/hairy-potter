@@ -22,10 +22,10 @@ toSellOrNotToSell(pot);
 toSellOrNotToSell(vase);
 toSellOrNotToSell(doll);
 
-const pottery = usePottery();
+usePottery();
 
 const parentHTMLElement = document.querySelector(".potteryList");
-parentHTMLElement.innerHTML = PotteryList(pottery);
+parentHTMLElement.innerHTML = PotteryList();
 // Fire each piece of pottery in the kiln
 
 // Determine which ones should be sold, and their price

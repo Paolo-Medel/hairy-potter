@@ -8,8 +8,11 @@ export const toSellOrNotToSell = (object) => {
     object.price = 20;
     pricedPottery.push(object);
   }
+  return object;
 };
 
 export const usePottery = () => {
-  return pricedPottery.map((piece) => ({ ...piece }));
+  const potteryArray = pricedPottery;
+
+  return potteryArray;
 };
